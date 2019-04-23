@@ -16,4 +16,18 @@ export class AppComponent {
 
   salario = 40125.51;
 
+  objeto = {
+    nombre: "Bruce Wayne",
+    clave: "Batman",
+    edad: 40,
+    direccion: {
+      calle: "Baticalle",
+      ciudad: "Gotham"
+    }
+  };
+
+  valorDePromesa = new Promise( (resolve, reject) => {
+    setTimeout( () => resolve('Llegó la data...'), 3500 );
+  } );
+
 }

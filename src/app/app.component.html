@@ -68,23 +68,28 @@
       </tr>
       <tr>
         <th>{{ salario }}</th>
-        <td>currency:'EUR':false</td>
-        <td>{{ salario | currency:'EUR':false }}</td>
+        <td>currency:'EUR':'false'</td>
+        <td>{{ salario | currency:'EUR':'false' }}</td>
       </tr>
       <tr>
         <th>{{ salario }}</th>
-        <td>currency:'EUR':false</td>
-        <td>{{ salario | currency:'EUR':false }}</td>
+        <td>currency:'EUR':'false'</td>
+        <td>{{ salario | currency:'EUR':'false' }}</td>
       </tr>
       <tr>
         <th>{{ salario }}</th>
-        <td>currency:'EUR':false:'4.0-0'</td>
-        <td>{{ salario | currency:'EUR':false:'4.0-0' }}</td>
+        <td>currency:'EUR':'false':'4.0-0'</td>
+        <td>{{ salario | currency:'EUR':'false':'4.0-0' }}</td>
       </tr>
       <tr>
         <th>{{ salario }}</th>
         <td>number:'.2-2'</td>
         <td>{{ salario | number:'.2-2' }}</td>
+      </tr>
+      <tr>
+        <th>{{ valorDePromesa }}</th>
+        <td>async</td>
+        <td>{{ valorDePromesa | async }}</td>
       </tr>
       
     </tbody>
@@ -94,4 +99,8 @@
   <ul>
     <li *ngFor="let item of arreglo | slice:5:20"> {{ item }} </li>
   </ul>
+  <h4>JSON</h4>
+  <pre>
+    {{ objeto | json }} 
+  </pre>
 </div>
