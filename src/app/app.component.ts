@@ -17,12 +17,12 @@ export class AppComponent {
   salario = 40125.51;
 
   objeto = {
-    nombre: "Bruce Wayne",
-    clave: "Batman",
+    nombre: 'Bruce Wayne',
+    clave: 'Batman',
     edad: 40,
     direccion: {
-      calle: "Baticalle",
-      ciudad: "Gotham"
+      calle: 'Baticalle',
+      ciudad: 'Gotham'
     }
   };
 
@@ -30,4 +30,9 @@ export class AppComponent {
     setTimeout( () => resolve('Llegó la data...'), 3500 );
   } );
 
+  fecha = new Date();
+
+  nombreCompleto = 'DiEGO David Scifo';
+
+  urlVideo = 'https://www.youtube.com/embed/sWK6eBYGZBM';
 }

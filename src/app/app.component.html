@@ -91,6 +91,26 @@
         <td>async</td>
         <td>{{ valorDePromesa | async }}</td>
       </tr>
+      <tr>
+        <th>{{ fecha }}</th>
+        <td>date</td>
+        <td>{{ fecha | date }}</td>
+      </tr>
+      <tr>
+        <th>{{ fecha }}</th>
+        <td>date:'d de MMMM del y'</td>
+        <td>{{ fecha | date:'d MMM y' }}</td>
+      </tr>
+      <tr>
+        <th>{{ nombreCompleto }}</th>
+        <td>capitalizado</td>
+        <td>{{ nombreCompleto | capitalizado }}</td>
+      </tr>
+      <tr>
+        <th>{{ nombreCompleto }}</th>
+        <td>capitalizado</td>
+        <td>{{ nombreCompleto | capitalizado:false }}</td>
+      </tr>
       
     </tbody>
   </table>
@@ -103,4 +123,7 @@
   <pre>
     {{ objeto | json }} 
   </pre>
+
+  <h4>Youtube <small>Video</small></h4>
+  <iframe width="560" height="315" src="{{ urlVideo }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
