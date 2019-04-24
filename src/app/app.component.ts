@@ -34,5 +34,7 @@ export class AppComponent {
 
   nombreCompleto = 'DiEGO David Scifo';
 
-  urlVideo = 'https://www.youtube.com/embed/sWK6eBYGZBM';
+  urlVideo = 'sWK6eBYGZBM';
+
+  ocultado = false;
 }

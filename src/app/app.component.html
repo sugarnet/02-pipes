@@ -125,5 +125,22 @@
   </pre>
 
   <h4>Youtube <small>Video</small></h4>
-  <iframe width="560" height="315" src="{{ urlVideo }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" [src]="urlVideo | domseguro:'https://www.youtube.com/embed/'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <br><br>
+  <h4>Contraseña</h4>
+  <table class="table">
+    <tr>
+      <td>{{ nombre }}</td>
+      <td>
+        <button class="btn btn-outline-info" (click)=" ocultado = !ocultado ">
+          {{ ocultado ? 'Mostrar' : 'Ocultar' }}
+        </button>
+      </td>
+      <td>
+        {{ nombre | password:ocultado }}
+      </td>
+    </tr>
+  </table>
+  <br><br><br>
 </div>
